@@ -14,7 +14,7 @@ class CategoryItem extends StatelessWidget {
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.symmetric(
-          vertical: 8,
+          vertical: 10,
           horizontal: 20,
         ),
         decoration: BoxDecoration(
@@ -30,22 +30,12 @@ class CategoryItem extends StatelessWidget {
                   category.title,
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
-                SvgPicture.asset(category.iconPath)
+                SvgPicture.asset(
+                  category.iconPath,
+                  height: 80,
+                  width: 90,
+                )
               ],
-            ),
-            const SizedBox(height: 8),
-            Container(
-              height: 10,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: const Color(0xffD1BEF8),
-                borderRadius: BorderRadius.circular(20),
-              ),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              '0 из 12',
-              style: Theme.of(context).textTheme.labelSmall,
             ),
           ],
         ),

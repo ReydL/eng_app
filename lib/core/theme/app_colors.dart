@@ -6,7 +6,7 @@ final class AppColors {
   static const primaryPurple = Color(0xff7F27FF);
   static const secondaryPurple = Color(0xffA167F5);
   static const tertiaryPurple = Color(0xffBD92FB);
-  static const backgroundColor = Color(0xffF9F8FB);
+  static const backgroundColor = Color(0xffF8F3FE);
   static const bodyPrimary = Color(0xffFCFCFD);
   static const textBlack = Color(0xff000000);
   static const textWhite = Color(0xffFFFFFF);

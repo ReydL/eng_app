@@ -55,12 +55,12 @@ final theme = ThemeData(
   ),
   scaffoldBackgroundColor: AppColors.backgroundColor,
   appBarTheme: const AppBarTheme(
-    backgroundColor: AppColors.backgroundColor,
+    backgroundColor: AppColors.textWhite,
     foregroundColor: AppColors.primaryPurple,
     titleTextStyle: TextStyle(
       fontFamily: 'Montserrat',
       fontWeight: FontWeight.w600,
-      color: AppColors.primaryPurple,
+      color: AppColors.textBlack,
       height: 1.6,
       fontSize: 18,
     ),
