@@ -1,5 +1,6 @@
 import 'package:eng_app/features/main/utils/lesson_category.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CategoryItem extends StatelessWidget {
@@ -26,20 +27,37 @@ class CategoryItem extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  category.title,
-                  style: Theme.of(context).textTheme.headlineSmall,
+                Expanded(
+                  child: Text(
+                    category.title,
+                    style: Theme.of(context).textTheme.headlineSmall,
+                  ),
                 ),
-                SvgPicture.asset(
-                  category.iconPath,
-                  height: 80,
-                  width: 90,
-                )
+                _buildImage(),
               ],
             ),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildImage() {
+    const height = 80.0;
+    const width = 85.0;
+
+    if (category.iconPath.endsWith('svg')) {
+      return SvgPicture.asset(
+        category.iconPath,
+        height: height,
+        width: width,
+      );
+    }
+
+    return Image.asset(
+      category.iconPath,
+      height: height,
+      width: width,
     );
   }
 }

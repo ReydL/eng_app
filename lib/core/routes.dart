@@ -10,4 +10,5 @@ final class Routes {
   static const practicePath = '/main/daily_train/pratice';
   static const mistakesPath = '/main/daily_train/mistakes';
   static const quizPath = '/main/quiz';
+  static const videoPath = '/main/video';
 }

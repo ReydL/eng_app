@@ -1,92 +1,124 @@
-import 'package:eng_app/core/theme/app_colors.dart';
 import 'package:eng_app/core/ui/progress_widget.dart';
-import 'package:eng_app/features/quiz/utils/fruts.dart';
-import 'package:eng_app/features/quiz/widgets/quiz_item.dart';
+import 'package:eng_app/features/quiz/model/quiz.dart';
+import 'package:eng_app/features/quiz/widgets/picture_quiz_widget.dart';
+import 'package:eng_app/features/quiz/widgets/quiz_message_widget.dart';
+import 'package:eng_app/features/quiz/widgets/text_quiz_widget.dart';
 import 'package:flutter/material.dart';
 
-class QuizPage extends StatelessWidget {
-  const QuizPage({super.key});
+class QuizPage extends StatefulWidget {
+  final String appBarTitle;
+  final List<Quiz> quizes;
+
+  const QuizPage({
+    super.key,
+    required this.appBarTitle,
+    required this.quizes,
+  });
+
+  @override
+  State<QuizPage> createState() => _QuizPageState();
+}
+
+class _QuizPageState extends State<QuizPage> {
+  int currentQuizIndex = 0;
+  String? selectAnswer;
+  bool correct = false;
+
+  @override
+  void initState() {
+    widget.quizes.shuffle();
+
+    super.initState();
+  }
+
+  Quiz get currentQuiz => widget.quizes[currentQuizIndex];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Новые слова'),
+        title: Text(widget.appBarTitle),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+      body: SafeArea(
+        child: Stack(
           children: [
-            const ProgressWidget(),
-            Padding(
-              padding: const EdgeInsets.only(
-                right: 20,
-                left: 20,
-                top: 24,
-                bottom: 10,
-              ),
+            SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'Выберите верную картинку',
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ),
-                  const SizedBox(height: 20),
-                  Container(
-                    width: double.infinity,
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    decoration: BoxDecoration(
-                      color: AppColors.bodyPrimary,
-                      borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                          color: AppColors.primaryPurple.withOpacity(0.6),
-                          blurRadius: 3,
-                        ),
+                  const ProgressWidget(),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      right: 20,
+                      left: 20,
+                      top: 24,
+                      bottom: 10,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (currentQuiz.type == QuizType.picture)
+                          PictureQuizWidget(
+                            quiz: currentQuiz,
+                            colorBuilder: _colorBuilder,
+                            onTap: _onAnswerTap,
+                          )
+                        else
+                          TextQuizWidget(
+                            quiz: currentQuiz,
+                            colorBuilder: _colorBuilder,
+                            onTap: _onAnswerTap,
+                          ),
+                        const SizedBox(height: 24),
                       ],
-                    ),
-                    child: Text(
-                      'Pineapple',
-                      style: Theme.of(context).textTheme.displayLarge,
-                    ),
-                  ),
-                  const SizedBox(height: 24),
-                  GridView.count(
-                    physics: const NeverScrollableScrollPhysics(),
-                    shrinkWrap: true,
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 20,
-                    crossAxisSpacing: 20,
-                    children: Fruts.values
-                        .map(
-                          (e) => QuizItem(icon: e.iconPath),
-                        )
-                        .toList(),
-                  ),
-                  const SizedBox(height: 24),
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text('Подтвердить'),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  SizedBox(
-                    width: double.infinity,
-                    child: OutlinedButton(
-                      onPressed: () {},
-                      child: const Text('Пропустить'),
                     ),
                   ),
                 ],
               ),
             ),
+            if (selectAnswer != null)
+              QuizMessageWidget(
+                isAnswerCorrect: selectAnswer == currentQuiz.correctAnswer,
+              ),
           ],
         ),
       ),
     );
+  }
+
+  void _onAnswerTap(String item) async {
+    if (selectAnswer != null) {
+      return;
+    }
+
+    selectAnswer = item;
+
+    setState(() {});
+
+    await Future.delayed(
+      const Duration(seconds: 2),
+    );
+
+    setState(() {
+      selectAnswer = null;
+
+      if (currentQuizIndex + 1 < widget.quizes.length) {
+        currentQuizIndex++;
+      } else {
+        Navigator.pop(context);
+      }
+    });
+  }
+
+  Color? _colorBuilder(String item) {
+    if (selectAnswer == item) {
+      if (selectAnswer == currentQuiz.correctAnswer) {
+        return Colors.green;
+      }
+
+      return Colors.red;
+    }
+
+    return null;
   }
 }

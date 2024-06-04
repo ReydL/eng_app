@@ -2,12 +2,12 @@ import 'package:eng_app/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppContainer extends StatelessWidget {
-  final String title;
+  final String? title;
   final Widget child;
 
   const AppContainer({
     super.key,
-    required this.title,
+    this.title,
     required this.child,
   });
 
@@ -19,11 +19,13 @@ class AppContainer extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            title,
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
-          const SizedBox(height: 16),
+          if (title != null) ...[
+            Text(
+              title!,
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: 16),
+          ],
           child,
         ],
       ),
