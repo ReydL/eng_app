@@ -1,4 +1,4 @@
-#Mon Apr 15 02:24:16 KGT 2024
+#Tue Jun 04 23:05:26 KGT 2024
 base.0=/Users/reydl/Documents/projects/eng_app/eng_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

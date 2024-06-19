@@ -10,19 +10,19 @@
 		</data>
 		<key>AppIcon60x60@2x.png</key>
 		<data>
-		WBDcNG/0BUOtsKQgKYOLyuqAbAM=
+		esvmmROciQfKkLbib13YrW+RjJc=
 		</data>
 		<key>AppIcon76x76@2x~ipad.png</key>
 		<data>
-		Bqtil6RquU1Hfn8gu0IYARWvCIM=
+		9dGiUnlspKcKj9ctOGgU+l8Erfo=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		CVantwASsG6RCuedeB5/kHc6Y24=
+		UQjmkzfJA0nN3BO6tsS/zq78nKg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		28xWMBQ91UzszfdXY91SqhC7ecg=
+		K04OlgvWE65g20r7W50TsVf42h0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		0BB/ohbT6uUX8I1cvw875e4UIlg=
+		hpk+o2jjvQoB0Re3gH2Puz7zNCM=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		HHWGsoraGkd7f4j3ZB1CCZBbgt4=
+		5la1Zgo7QE2uJmnifyBZ/WS8HSM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		nPhWXHJRPp8YuKSVtAfKgAAn0fM=
+		uGoMUM5wwriIeY61mTU6POXMlis=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Montserrat-Medium.ttf</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		/Z+JETU5HyGBF/We+0WXvKa+HbE=
+		b1yw65Y7hEkOGqVHKvNxA25fhyk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -284,6 +284,26 @@
 		<data>
 		Ubat0LvE4LUgCwHeyl0Anx2vnzk=
 		</data>
+		<key>Frameworks/flutter_native_splash.framework/Info.plist</key>
+		<data>
+		HkpCdc74/eyAq/xrqaB+o8tkC5Y=
+		</data>
+		<key>Frameworks/flutter_native_splash.framework/_CodeSignature/CodeResources</key>
+		<data>
+		beIeA5qHTXhFCcwleXo+lVp8mjw=
+		</data>
+		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash</key>
+		<data>
+		H+6aIDkDn8D93WVVXRo+Qhbxfzk=
+		</data>
+		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash_privacy.bundle/Info.plist</key>
+		<data>
+		dlQOERq0Br+JxBE67SZ4b82Wy2Y=
+		</data>
+		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		/LX0ZlwxwIAIhjZaDB8EiH5KpXA=
+		</data>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<data>
 		pMq/KxdGh5/dS//CgQTnnOBR75Q=
@@ -303,6 +323,26 @@
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation_privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		/LX0ZlwxwIAIhjZaDB8EiH5KpXA=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<data>
+		74AovEedtjPa+wru9OPRYvoF+dg=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<data>
+		crYSA4JwlCMQrAZxCPQIdsfYIA0=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<data>
+		qWMXF/C8YKqkNfZlxcth/8GXSVU=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/Info.plist</key>
+		<data>
+		nf06LDKEygH90odIWT1BqKcVQzM=
+		</data>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		6uLTlq7fgHHWA8emYDf4ImHC+AY=
 		</data>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
 		<data>
@@ -346,7 +386,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gckKbn3BaESdakla8ZRca7PgMrU=
+		VUq/dLfy9JXNy0trUZjpIto4tbQ=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -366,28 +406,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gb4XFIHccaCygD680B3YsMX9V3je40wKPKvJSMIl8k4=
+			B54WWWw+02NS0hECBrirJioEFonsFVU8B49ZUTuRM+s=
 			</data>
 		</dict>
 		<key>AppIcon76x76@2x~ipad.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcfUL25h+P5/MLH/oiVq7LyWgr4G0YxKMGIEPhouVHw=
+			Ig0RIdMEwAiwAKxXUZTxVycNI6Q7yCtdrKHMy6aAATA=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			voHOylzKX0gmYRZCh+zF0qaAOVPPTNqbJS3hUdy8+cY=
+			tBbB6jYb3/bg4pwhSwYmk3ESmPRaa6hLze2BEZcT70c=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			by6WshwXWgbEYiAy2bvh0UtjSVa3EwySkNFc1FazGdY=
+			MLYS/rGlRDfjjHWDuWCirDt0zobokkwlMoJohZWe2go=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -429,7 +469,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8XjGk3H4QoBiZ1ajuH/vLx4of4D007KHCT/KcWQNYJ0=
+			2IWVKj93IVJLO646G/TNbXfnPeg1Siilye/pP6oyK4g=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -443,7 +483,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xi0DKBa8/e8fYuZDPgKwrkbejoew4u/Lkt7AJ0Foaf0=
+			FolLIOq4uNBT12wXz2Bh80pdHUX9xBbs3XezqjTMXMc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
@@ -471,7 +511,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KFeGgFIy27aYVvi583vmL97yTD0C8cCUPTaUMe7Tano=
+			Y+y4MgZBSiYn9tVFS4Bocvvo3UQeoUQUPn2IWDwNUaU=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Montserrat-Medium.ttf</key>
@@ -667,7 +707,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bPdCUXZtlOKvAvonr1pzcXMfLjludRYKN5wYsriO4h8=
+			ur3qxCQfWw7aGfy3cG2/8nbhxc2A43haOjK7ciGynxg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -845,6 +885,41 @@
 			ZepykIMSjfzhwAcmupMrkaqvXkhza1ZE3TdHjl8odaw=
 			</data>
 		</dict>
+		<key>Frameworks/flutter_native_splash.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BVe5l5Hk/uHd4Vtwv4LbZOsqWyBylTfrPQBGqZrsKxk=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_native_splash.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			on9Am6zRDigAa53nzgFwBVKIwXEkGWBlJPkUuJ7Ng00=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d2QFo/ixONVdK+wU7BrriSnws/UuDmAWzs36RvdPnls=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash_privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2dt9IJNW37YJ83THSIGjYIrTFz6NVW0wH/pyfCfmI34=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bS2g2NkwIn1CjB2TY7CtbjoS4sm2jFzilxWKdBL8jDE=
+			</data>
+		</dict>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -878,6 +953,41 @@
 			<key>hash2</key>
 			<data>
 			bS2g2NkwIn1CjB2TY7CtbjoS4sm2jFzilxWKdBL8jDE=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/vWWuXIB7jozeaU/17Ysi7Au8szRKPYBsAdIwOkD2H0=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7cOiT2SJdroQwhSgFqIS/hnBWj92i24Q8/l3gXQCsOg=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TFou9s+H1BEVjo86DEIHm3q89G4Fd87VmPQWXQLaoVc=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			94uvm8un4dUyZjVcj93pImnb4/9RZNMO76WtzuEzc3Q=
+			</data>
+		</dict>
+		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation_privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BWQouTi9VwGKYAGdFcPB7i+nJ/I2h1mLu9k0hIsYCxo=
 			</data>
 		</dict>
 		<key>Frameworks/sqflite.framework/Info.plist</key>

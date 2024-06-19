@@ -3,12 +3,19 @@ import 'package:flutter/material.dart';
 
 class AppTextField extends StatelessWidget {
   final String? hintText;
+  final String? Function(String? value)? validator;
+  final TextEditingController? controller;
 
-  const AppTextField({this.hintText, super.key});
+  const AppTextField({
+    this.hintText,
+    super.key,
+    this.validator,
+    this.controller,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       style: Theme.of(context)
           .textTheme
           .bodyMedium
@@ -17,6 +24,8 @@ class AppTextField extends StatelessWidget {
         hintText: hintText,
         hintStyle: Theme.of(context).textTheme.bodyMedium,
       ),
+      validator: validator,
+      controller: controller,
     );
   }
 }

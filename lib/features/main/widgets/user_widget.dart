@@ -1,6 +1,5 @@
 import 'package:eng_app/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class UserWidget extends StatelessWidget {
   const UserWidget({super.key});
@@ -35,7 +34,6 @@ class UserWidget extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
           ),
           const Spacer(),
-          SvgPicture.asset('assets/images/settings.svg'),
         ],
       ),
     );
